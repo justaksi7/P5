@@ -42,7 +42,7 @@ HEADERS += \
     bookingdetails.h \
     check.h \
     dialog.h \
-    graph.h \
+    digraph.h \
     mainwindow.h \
     sortfunktor.h \
     travelagencyui.h

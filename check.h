@@ -7,7 +7,7 @@ class Check{
 public:
     shared_ptr<TravelAgency>travelAgency;
     void operator()();
-    bool checkTravelsDisjunct(QString message);
+    bool checkTravelsDisjunct(QString &message);
     void checkForChanges();
     Check(shared_ptr<TravelAgency>inTravelAgency);
     ~Check();

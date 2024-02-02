@@ -72,7 +72,9 @@ void TravelAgencyUI::on_tableWidget_cellDoubleClicked(int row, int column)
     string a="http://townsendjennings.com/geo/?geojson=";
     string b=geojson.dump();
     string c=a+b;
-    QDesktopServices::openUrl(QUrl(QString::fromStdString(c),QUrl::TolerantMode));
+    //QDesktopServices::openUrl(QUrl(QString::fromStdString(c),QUrl::TolerantMode));
+
+    QMessageBox::information(nullptr,"VertexTable",inTravelAgency->findTravel(ui->reiseID->text().toLong())->VertexDatastring);
 }
 
 

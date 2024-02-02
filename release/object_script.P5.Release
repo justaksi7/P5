@@ -8,7 +8,6 @@ release/RentalCarReservation.o
 release/TrainTicket.o
 release/Travel.o
 release/TravelAgency.o
-release/algorithmen.o
 release/bookingdetails.o
 release/check.o
 release/dialog.o

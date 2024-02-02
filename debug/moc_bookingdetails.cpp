@@ -463,8 +463,8 @@ void bookingDetails::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 29: _t->on_zugDeparture_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 30: _t->on_zugArrival_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 31: _t->on_zugCS_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
-        case 32: _t->on_zugCS_currentItemChanged((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[2]))); break;
-        case 33: _t->on_zugCS_currentTextChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        //case 32: _t->on_zugCS_currentItemChanged((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[2]))); break;
+        //case 33: _t->on_zugCS_currentTextChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }

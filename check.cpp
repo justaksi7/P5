@@ -6,7 +6,7 @@ void Check::operator()()
 
 }
 
-bool Check::checkTravelsDisjunct(QString message)
+bool Check::checkTravelsDisjunct(QString &message)
 {
     for (const auto &travel1 : travelAgency->allTravels)
     {
@@ -19,9 +19,10 @@ bool Check::checkTravelsDisjunct(QString message)
                     && QDate::fromString(QString::fromStdString(travel1->getEndDate())) <= QDate::fromString(QString::fromStdString(travel2->getEndDate())))
                 {
 
-                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 and %2.")
+                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 und %2 von Customer &3.")
                                        .arg(travel1->id)
-                                       .arg(travel2->id);
+                                       .arg(travel2->id)
+                                       .arg(travel1->customerId);
                     return false;
                 }
             }
@@ -38,7 +39,7 @@ void Check::checkForChanges()
     if (!checkTravelsDisjunct(errorMessage))
     {
 
-        QMessageBox::critical(nullptr, "Überlappung festgestellt", errorMessage);
+        //QMessageBox::critical(nullptr, "Überlappung festgestellt", errorMessage);
     }
 }
 

@@ -8,7 +8,6 @@ debug/RentalCarReservation.o
 debug/TrainTicket.o
 debug/Travel.o
 debug/TravelAgency.o
-debug/algorithmen.o
 debug/bookingdetails.o
 debug/check.o
 debug/dialog.o

@@ -212,6 +212,10 @@ void TravelAgency::readFile(string inJSONname)
         a.name=item["name"];
         airports.insert({iata,make_shared<Airport>(a)});
     }
+    for(const auto& item:allTravels)
+    {
+        item->sortVertexDataVector();
+    }
 }
 
 void TravelAgency::writeFile(string inJSONname)
