@@ -5,6 +5,7 @@
 #include "Travel.h"
 #include "TravelAgency.h"
 #include "QListWidget"
+#include "qabstractbutton.h"
 namespace Ui {
 class bookingDetails;
 }
@@ -17,6 +18,8 @@ public:
     explicit bookingDetails(shared_ptr<TravelAgency>inTravelAgency,shared_ptr<Booking> inBooking, QWidget *parent = nullptr);
     map <string,shared_ptr<Airport>>airports;
     ~bookingDetails();
+signals:
+    void runChecks();
 
 private slots:
     void on_hotelID_textChanged(const QString &arg1);
@@ -86,6 +89,10 @@ private slots:
     void on_zugCS_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous);
 
     void on_zugCS_currentTextChanged(const QString &currentText);
+
+    void on_buttonBox_accepted();
+
+    void on_buttonBox_clicked(QAbstractButton *button);
 
 private:
     Ui::bookingDetails *ui;

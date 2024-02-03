@@ -1,9 +1,25 @@
 #include "check.h"
 #include <QMessageBox>
 #include <QDate>
+#include <QString>
 void Check::operator()()
 {
-
+    if(travelAgency->consistencyChecks[0]==true)
+    {
+        checkTravelsDisjunct();
+    }
+    if(travelAgency->consistencyChecks[1]==true)
+    {
+        checkNoMissingHotels();
+    }
+    if(travelAgency->consistencyChecks[2]==true)
+    {
+        checkNoOverlappingHotels();
+    }
+    if(travelAgency->consistencyChecks[3]==true)
+    {
+        checkNoOverlappingRentalCars();
+    }
 }
 
 void Check::checkTravelsDisjunct()
@@ -19,20 +35,22 @@ void Check::checkTravelsDisjunct()
                 if (QDate::fromString(QString::fromStdString(travel1->getEndDate()),"yyyyMMdd") >= QDate::fromString(QString::fromStdString(travel2->getStartDate()),"yyyyMMdd")
                     && QDate::fromString(QString::fromStdString(travel1->getEndDate()),"yyyyMMdd") <= QDate::fromString(QString::fromStdString(travel2->getEndDate()),"yyyyMMdd"))
                 {
-                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 und %2 von Customer &3.")
+                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 und %2 von Customer %3.")
                                        .arg(travel1->id)
                                        .arg(travel2->id)
                                        .arg(travel1->customerId);
                     travelAgency->errorVector.push_back(message);
+
                 }
-                else                 if (QDate::fromString(QString::fromStdString(travel1->getStartDate()),"yyyyMMdd") >= QDate::fromString(QString::fromStdString(travel2->getStartDate()),"yyyyMMdd")
+                else if (QDate::fromString(QString::fromStdString(travel1->getStartDate()),"yyyyMMdd") >= QDate::fromString(QString::fromStdString(travel2->getStartDate()),"yyyyMMdd")
                     && QDate::fromString(QString::fromStdString(travel1->getStartDate()),"yyyyMMdd") <= QDate::fromString(QString::fromStdString(travel2->getEndDate()),"yyyyMMdd"))
                 {
-                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 und %2 von Customer &3.")
+                    message = QString("Überlappung festgestellt zwischen Travel IDs %1 und %2 von Customer %3.")
                                        .arg(travel1->id)
                                        .arg(travel2->id)
                                        .arg(travel1->customerId);
                     travelAgency->errorVector.push_back(message);
+
                 }
             }
         }
@@ -61,6 +79,7 @@ void Check::checkNoMissingHotels()
                                      +" between booking"+temp1->id+" and "+temp2->id;
                         message=QString::fromStdString(stdmessage);
                         travelAgency->errorVector.push_back(message);
+
                     }
                 }
             }
@@ -128,12 +147,28 @@ void Check::checkNoOverlappingRentalCars()
 
 void Check::checkForChanges()
 {
-
+    if(travelAgency->consistencyChecks[0]==true)
+    {
+        checkTravelsDisjunct();
+    }
+    if(travelAgency->consistencyChecks[1]==true)
+    {
+        checkNoMissingHotels();
+    }
+    if(travelAgency->consistencyChecks[2]==true)
+    {
+        checkNoOverlappingHotels();
+    }
+    if(travelAgency->consistencyChecks[3]==true)
+    {
+        checkNoOverlappingRentalCars();
+    }
 }
 
 Check::Check(shared_ptr<TravelAgency> inTravelAgency)
 {
     this->travelAgency=inTravelAgency;
+    travelAgency->errorVector.push_back("Test");
 }
 
 Check::~Check()

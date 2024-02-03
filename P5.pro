@@ -21,7 +21,9 @@ SOURCES += \
     algorithmen.cpp \
     bookingdetails.cpp \
     check.cpp \
+    consistencychecksui.cpp \
     dialog.cpp \
+    errorsui.cpp \
     main.cpp \
     mainwindow.cpp \
     sortfunktor.cpp \
@@ -39,15 +41,19 @@ HEADERS += \
     TravelAgency.h \
     bookingdetails.h \
     check.h \
+    consistencychecksui.h \
     dialog.h \
     digraph.h \
+    errorsui.h \
     mainwindow.h \
     sortfunktor.h \
     travelagencyui.h
 
 FORMS += \
     bookingdetails.ui \
+    consistencychecksui.ui \
     dialog.ui \
+    errorsui.ui \
     mainwindow.ui \
     travelagencyui.ui
 

@@ -748,7 +748,7 @@ public:
         QObject::connect(buttonBox, &QDialogButtonBox::accepted, bookingDetails, qOverload<>(&QDialog::accept));
         QObject::connect(buttonBox, &QDialogButtonBox::rejected, bookingDetails, qOverload<>(&QDialog::reject));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(bookingDetails);

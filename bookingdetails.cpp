@@ -1,14 +1,16 @@
 #include "bookingdetails.h"
+#include "travelagencyui.h"
 #include "ui_bookingdetails.h"
 #include "TravelAgency.h"
 #include "QInputDialog"
 
 bookingDetails::bookingDetails(shared_ptr<TravelAgency> inTravelAgency,shared_ptr<Booking> inBooking,QWidget *parent) :
-    QDialog(parent),booking(inBooking),airports(inTravelAgency->airports),
-    ui(new Ui::bookingDetails)
+    QDialog(parent),airports(inTravelAgency->airports),ui(new Ui::bookingDetails),
+    booking(inBooking)
 {
     ui->setupUi(this);
     setDetails();
+    emit this->runChecks();
 }
 
 bookingDetails::~bookingDetails()
@@ -192,6 +194,7 @@ void bookingDetails::on_flugFromDest_textChanged(const QString &arg1)
         ui->fromName->setText("Ungültiger IATA Code");
             ui->fromName->setStyleSheet("color:red;");
     }
+    emit runChecks();
 }
 
 
@@ -396,4 +399,16 @@ void bookingDetails::on_zugCS_itemDoubleClicked(QListWidgetItem *item)
     t->connectingStations[ui->zugCS->currentRow()].stationName=item->text().toStdString();
 }
 
+
+
+void bookingDetails::on_buttonBox_accepted()
+{
+    emit runChecks();
+}
+
+
+void bookingDetails::on_buttonBox_clicked(QAbstractButton *button)
+{
+    emit runChecks();
+}
 

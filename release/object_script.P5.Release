@@ -9,13 +9,17 @@ release/Travel.o
 release/TravelAgency.o
 release/bookingdetails.o
 release/check.o
+release/consistencychecksui.o
 release/dialog.o
+release/errorsui.o
 release/main.o
 release/mainwindow.o
 release/sortfunktor.o
 release/travelagencyui.o
 release/qrc_icons.o
 release/moc_bookingdetails.o
+release/moc_consistencychecksui.o
 release/moc_dialog.o
+release/moc_errorsui.o
 release/moc_mainwindow.o
 release/moc_travelagencyui.o

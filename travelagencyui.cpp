@@ -1,4 +1,5 @@
 #include "travelagencyui.h"
+#include "errorsui.h"
 #include "ui_travelagencyui.h"
 #include <QFileDialog>
 #include <QMessageBox>
@@ -8,10 +9,10 @@
 #include <QDesktopServices>
 #include <QUrl>
 
-TravelAgencyUI::TravelAgencyUI(TravelAgency* inTravelAgency,QWidget *parent)
+TravelAgencyUI::TravelAgencyUI(shared_ptr<TravelAgency> inTravelAgency, QWidget *parent)
     : QMainWindow(parent)
+    ,check(inTravelAgency)
     ,ui(new Ui::TravelAgencyUI)
-    ,check(make_shared<TravelAgency>(*inTravelAgency))
     ,inTravelAgency(inTravelAgency)
 {
 
@@ -23,7 +24,6 @@ TravelAgencyUI::TravelAgencyUI(TravelAgency* inTravelAgency,QWidget *parent)
 
 TravelAgencyUI::~TravelAgencyUI()
 {
-    delete inTravelAgency;
     delete ui;
 }
 
@@ -36,6 +36,9 @@ void TravelAgencyUI::on_actionEinlesen_triggered()
     msg.setWindowTitle("Read File");
     msg.setText(QString::fromStdString(inTravelAgency->einlesenMeldung));
     msg.exec();
+    check.checkForChanges();
+    errorsUI e(inTravelAgency->errorVector,this);
+    e.exec();
 }
 
 
@@ -83,13 +86,34 @@ void TravelAgencyUI::on_tableWidget_cellDoubleClicked(int row, int column)
 
 void TravelAgencyUI::on_tableWidget_2_cellDoubleClicked(int row, int column)
 {
-    bookingDetails b(make_shared<TravelAgency>(*inTravelAgency),inTravelAgency->findTravel(ui->reiseID->text().toLong())->travelBookings[row]);
+    bookingDetails b(inTravelAgency,inTravelAgency->findTravel(ui->reiseID->text().toLong())->travelBookings[row],this);
     b.exec();
+    connect(&b,&bookingDetails::runChecks,this,&TravelAgencyUI::onRun_Checks);
 }
 
 
 void TravelAgencyUI::on_actionSpeichern_triggered()
 {
     inTravelAgency->writeFile(QFileDialog::getOpenFileName().toStdString());
+}
+
+
+void TravelAgencyUI::on_actionSettings_triggered()
+{
+    consistencyChecksUI* c=new consistencyChecksUI;
+    c->exec();
+    connect(c,&consistencyChecksUI::returnChecks,this,&TravelAgencyUI::set_Checks);
+}
+
+void TravelAgencyUI::set_Checks(std::vector<bool> checks)
+{
+    inTravelAgency->setConsistencyChecks(checks);
+}
+
+void TravelAgencyUI::onRun_Checks()
+{
+    check.checkForChanges();
+    errorsUI e(inTravelAgency->errorVector,this);
+    e.exec();
 }
 

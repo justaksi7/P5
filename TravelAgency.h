@@ -5,6 +5,7 @@
 #include <memory>
 #include <map>
 #include <Airport.h>
+#include "QListWidget"
 
 using namespace std;
 using json=nlohmann::json;
@@ -16,8 +17,9 @@ private:
     vector<shared_ptr<Travel>>allTravels;
     map<string,shared_ptr<Airport>>airports;
     vector<QString>errorVector;
+    vector<bool> consistencyChecks;
 public:
-    TravelAgency(){}
+    TravelAgency();
     friend class TravelAgencyUI;
     friend class bookingDetails;
     friend class Check;
@@ -36,6 +38,8 @@ public:
     void setTravels(long customerID,QTableWidget* travelsTable);
     void setBookings(long travelID,QTableWidget* bookingsTable);
     void setDetails(TravelAgency* inTravelAgency,long travelid,int bookingindex);
+    void setConsistencyChecks(vector<bool> checksarray);
+    void setErrorsUI(QListWidget* listWidget);
     ~TravelAgency();
 };
 

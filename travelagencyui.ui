@@ -163,6 +163,7 @@
    <addaction name="separator"/>
    <addaction name="actionSuchen"/>
    <addaction name="actionSpeichern"/>
+   <addaction name="actionSettings"/>
   </widget>
   <action name="actionEinlesen">
    <property name="icon">
@@ -193,6 +194,16 @@
    </property>
    <property name="menuRole">
     <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/settings.png</normaloff>
+     <normalon>:/settings.png</normalon>:/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>actionSettings</string>
    </property>
   </action>
  </widget>

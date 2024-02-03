@@ -6,8 +6,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    TravelAgency inTravelAgency;
-    TravelAgencyUI w(&inTravelAgency);
+    shared_ptr<TravelAgency>inTravelAgency=make_shared<TravelAgency>();
+    TravelAgencyUI w(inTravelAgency);
     w.show();
     return a.exec();
 }

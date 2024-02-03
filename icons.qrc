@@ -6,5 +6,6 @@
         <file>search.png</file>
         <file>speichern.png</file>
         <file>train.jpg</file>
+        <file>settings.png</file>
     </qresource>
 </RCC>

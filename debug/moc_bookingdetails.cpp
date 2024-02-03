@@ -39,8 +39,9 @@ namespace {
 struct qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSbookingDetailsENDCLASS = QtMocHelpers::stringData(
     "bookingDetails",
-    "on_hotelID_textChanged",
+    "runChecks",
     "",
+    "on_hotelID_textChanged",
     "arg1",
     "on_flugID_textChanged",
     "on_flugAirline_textChanged",
@@ -79,104 +80,119 @@ static constexpr auto qt_meta_stringdata_CLASSbookingDetailsENDCLASS = QtMocHelp
     "current",
     "previous",
     "on_zugCS_currentTextChanged",
-    "currentText"
+    "currentText",
+    "on_buttonBox_accepted",
+    "on_buttonBox_clicked",
+    "QAbstractButton*",
+    "button"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t {
-    uint offsetsAndSizes[84];
+    uint offsetsAndSizes[94];
     char stringdata0[15];
-    char stringdata1[23];
+    char stringdata1[10];
     char stringdata2[1];
-    char stringdata3[5];
-    char stringdata4[22];
-    char stringdata5[27];
-    char stringdata6[28];
-    char stringdata7[26];
-    char stringdata8[28];
-    char stringdata9[26];
-    char stringdata10[25];
+    char stringdata3[23];
+    char stringdata4[5];
+    char stringdata5[22];
+    char stringdata6[27];
+    char stringdata7[28];
+    char stringdata8[26];
+    char stringdata9[28];
+    char stringdata10[26];
     char stringdata11[25];
-    char stringdata12[21];
-    char stringdata13[24];
-    char stringdata14[26];
-    char stringdata15[27];
-    char stringdata16[25];
+    char stringdata12[25];
+    char stringdata13[21];
+    char stringdata14[24];
+    char stringdata15[26];
+    char stringdata16[27];
     char stringdata17[25];
     char stringdata18[25];
-    char stringdata19[24];
-    char stringdata20[26];
+    char stringdata19[25];
+    char stringdata20[24];
     char stringdata21[26];
-    char stringdata22[25];
-    char stringdata23[29];
-    char stringdata24[27];
-    char stringdata25[26];
-    char stringdata26[24];
-    char stringdata27[27];
-    char stringdata28[24];
-    char stringdata29[25];
-    char stringdata30[23];
-    char stringdata31[21];
-    char stringdata32[28];
-    char stringdata33[26];
-    char stringdata34[27];
-    char stringdata35[17];
-    char stringdata36[5];
-    char stringdata37[28];
-    char stringdata38[8];
-    char stringdata39[9];
-    char stringdata40[28];
-    char stringdata41[12];
+    char stringdata22[26];
+    char stringdata23[25];
+    char stringdata24[29];
+    char stringdata25[27];
+    char stringdata26[26];
+    char stringdata27[24];
+    char stringdata28[27];
+    char stringdata29[24];
+    char stringdata30[25];
+    char stringdata31[23];
+    char stringdata32[21];
+    char stringdata33[28];
+    char stringdata34[26];
+    char stringdata35[27];
+    char stringdata36[17];
+    char stringdata37[5];
+    char stringdata38[28];
+    char stringdata39[8];
+    char stringdata40[9];
+    char stringdata41[28];
+    char stringdata42[12];
+    char stringdata43[22];
+    char stringdata44[21];
+    char stringdata45[17];
+    char stringdata46[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t qt_meta_stringdata_CLASSbookingDetailsENDCLASS = {
     {
         QT_MOC_LITERAL(0, 14),  // "bookingDetails"
-        QT_MOC_LITERAL(15, 22),  // "on_hotelID_textChanged"
-        QT_MOC_LITERAL(38, 0),  // ""
-        QT_MOC_LITERAL(39, 4),  // "arg1"
-        QT_MOC_LITERAL(44, 21),  // "on_flugID_textChanged"
-        QT_MOC_LITERAL(66, 26),  // "on_flugAirline_textChanged"
-        QT_MOC_LITERAL(93, 27),  // "on_flugFromDate_textChanged"
-        QT_MOC_LITERAL(121, 25),  // "on_flugToDate_textChanged"
-        QT_MOC_LITERAL(147, 27),  // "on_flugFromDest_textChanged"
-        QT_MOC_LITERAL(175, 25),  // "on_flugToDest_textChanged"
-        QT_MOC_LITERAL(201, 24),  // "on_flugClass_textChanged"
-        QT_MOC_LITERAL(226, 24),  // "on_flugPrice_textChanged"
-        QT_MOC_LITERAL(251, 20),  // "on_carID_textChanged"
-        QT_MOC_LITERAL(272, 23),  // "on_carClass_textChanged"
-        QT_MOC_LITERAL(296, 25),  // "on_carCompany_textChanged"
-        QT_MOC_LITERAL(322, 26),  // "on_carFromDate_textChanged"
-        QT_MOC_LITERAL(349, 24),  // "on_carToDate_textChanged"
-        QT_MOC_LITERAL(374, 24),  // "on_carPickUp_textChanged"
-        QT_MOC_LITERAL(399, 24),  // "on_carReturn_textChanged"
-        QT_MOC_LITERAL(424, 23),  // "on_carPrice_textChanged"
-        QT_MOC_LITERAL(448, 25),  // "on_hotelHotel_textChanged"
-        QT_MOC_LITERAL(474, 25),  // "on_hotelClass_textChanged"
-        QT_MOC_LITERAL(500, 24),  // "on_hotelTown_textChanged"
-        QT_MOC_LITERAL(525, 28),  // "on_hotelFromDate_textChanged"
-        QT_MOC_LITERAL(554, 26),  // "on_hotelToDate_textChanged"
-        QT_MOC_LITERAL(581, 25),  // "on_hotelPrice_textChanged"
-        QT_MOC_LITERAL(607, 23),  // "on_zugClass_textChanged"
-        QT_MOC_LITERAL(631, 26),  // "on_zugFromDate_textChanged"
-        QT_MOC_LITERAL(658, 23),  // "on_zugPrice_textChanged"
-        QT_MOC_LITERAL(682, 24),  // "on_zugToDate_textChanged"
-        QT_MOC_LITERAL(707, 22),  // "on_zugFrom_textChanged"
-        QT_MOC_LITERAL(730, 20),  // "on_zugTo_textChanged"
-        QT_MOC_LITERAL(751, 27),  // "on_zugDeparture_textChanged"
-        QT_MOC_LITERAL(779, 25),  // "on_zugArrival_textChanged"
-        QT_MOC_LITERAL(805, 26),  // "on_zugCS_itemDoubleClicked"
-        QT_MOC_LITERAL(832, 16),  // "QListWidgetItem*"
-        QT_MOC_LITERAL(849, 4),  // "item"
-        QT_MOC_LITERAL(854, 27),  // "on_zugCS_currentItemChanged"
-        QT_MOC_LITERAL(882, 7),  // "current"
-        QT_MOC_LITERAL(890, 8),  // "previous"
-        QT_MOC_LITERAL(899, 27),  // "on_zugCS_currentTextChanged"
-        QT_MOC_LITERAL(927, 11)   // "currentText"
+        QT_MOC_LITERAL(15, 9),  // "runChecks"
+        QT_MOC_LITERAL(25, 0),  // ""
+        QT_MOC_LITERAL(26, 22),  // "on_hotelID_textChanged"
+        QT_MOC_LITERAL(49, 4),  // "arg1"
+        QT_MOC_LITERAL(54, 21),  // "on_flugID_textChanged"
+        QT_MOC_LITERAL(76, 26),  // "on_flugAirline_textChanged"
+        QT_MOC_LITERAL(103, 27),  // "on_flugFromDate_textChanged"
+        QT_MOC_LITERAL(131, 25),  // "on_flugToDate_textChanged"
+        QT_MOC_LITERAL(157, 27),  // "on_flugFromDest_textChanged"
+        QT_MOC_LITERAL(185, 25),  // "on_flugToDest_textChanged"
+        QT_MOC_LITERAL(211, 24),  // "on_flugClass_textChanged"
+        QT_MOC_LITERAL(236, 24),  // "on_flugPrice_textChanged"
+        QT_MOC_LITERAL(261, 20),  // "on_carID_textChanged"
+        QT_MOC_LITERAL(282, 23),  // "on_carClass_textChanged"
+        QT_MOC_LITERAL(306, 25),  // "on_carCompany_textChanged"
+        QT_MOC_LITERAL(332, 26),  // "on_carFromDate_textChanged"
+        QT_MOC_LITERAL(359, 24),  // "on_carToDate_textChanged"
+        QT_MOC_LITERAL(384, 24),  // "on_carPickUp_textChanged"
+        QT_MOC_LITERAL(409, 24),  // "on_carReturn_textChanged"
+        QT_MOC_LITERAL(434, 23),  // "on_carPrice_textChanged"
+        QT_MOC_LITERAL(458, 25),  // "on_hotelHotel_textChanged"
+        QT_MOC_LITERAL(484, 25),  // "on_hotelClass_textChanged"
+        QT_MOC_LITERAL(510, 24),  // "on_hotelTown_textChanged"
+        QT_MOC_LITERAL(535, 28),  // "on_hotelFromDate_textChanged"
+        QT_MOC_LITERAL(564, 26),  // "on_hotelToDate_textChanged"
+        QT_MOC_LITERAL(591, 25),  // "on_hotelPrice_textChanged"
+        QT_MOC_LITERAL(617, 23),  // "on_zugClass_textChanged"
+        QT_MOC_LITERAL(641, 26),  // "on_zugFromDate_textChanged"
+        QT_MOC_LITERAL(668, 23),  // "on_zugPrice_textChanged"
+        QT_MOC_LITERAL(692, 24),  // "on_zugToDate_textChanged"
+        QT_MOC_LITERAL(717, 22),  // "on_zugFrom_textChanged"
+        QT_MOC_LITERAL(740, 20),  // "on_zugTo_textChanged"
+        QT_MOC_LITERAL(761, 27),  // "on_zugDeparture_textChanged"
+        QT_MOC_LITERAL(789, 25),  // "on_zugArrival_textChanged"
+        QT_MOC_LITERAL(815, 26),  // "on_zugCS_itemDoubleClicked"
+        QT_MOC_LITERAL(842, 16),  // "QListWidgetItem*"
+        QT_MOC_LITERAL(859, 4),  // "item"
+        QT_MOC_LITERAL(864, 27),  // "on_zugCS_currentItemChanged"
+        QT_MOC_LITERAL(892, 7),  // "current"
+        QT_MOC_LITERAL(900, 8),  // "previous"
+        QT_MOC_LITERAL(909, 27),  // "on_zugCS_currentTextChanged"
+        QT_MOC_LITERAL(937, 11),  // "currentText"
+        QT_MOC_LITERAL(949, 21),  // "on_buttonBox_accepted"
+        QT_MOC_LITERAL(971, 20),  // "on_buttonBox_clicked"
+        QT_MOC_LITERAL(992, 16),  // "QAbstractButton*"
+        QT_MOC_LITERAL(1009, 6)   // "button"
     },
     "bookingDetails",
-    "on_hotelID_textChanged",
+    "runChecks",
     "",
+    "on_hotelID_textChanged",
     "arg1",
     "on_flugID_textChanged",
     "on_flugAirline_textChanged",
@@ -215,7 +231,11 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t qt_met
     "current",
     "previous",
     "on_zugCS_currentTextChanged",
-    "currentText"
+    "currentText",
+    "on_buttonBox_accepted",
+    "on_buttonBox_clicked",
+    "QAbstractButton*",
+    "button"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -227,84 +247,94 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSbookingDetailsENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      34,   14, // methods
+      37,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,  236,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,  218,    2, 0x08,    1 /* Private */,
-       4,    1,  221,    2, 0x08,    3 /* Private */,
-       5,    1,  224,    2, 0x08,    5 /* Private */,
-       6,    1,  227,    2, 0x08,    7 /* Private */,
-       7,    1,  230,    2, 0x08,    9 /* Private */,
-       8,    1,  233,    2, 0x08,   11 /* Private */,
-       9,    1,  236,    2, 0x08,   13 /* Private */,
-      10,    1,  239,    2, 0x08,   15 /* Private */,
-      11,    1,  242,    2, 0x08,   17 /* Private */,
-      12,    1,  245,    2, 0x08,   19 /* Private */,
-      13,    1,  248,    2, 0x08,   21 /* Private */,
-      14,    1,  251,    2, 0x08,   23 /* Private */,
-      15,    1,  254,    2, 0x08,   25 /* Private */,
-      16,    1,  257,    2, 0x08,   27 /* Private */,
-      17,    1,  260,    2, 0x08,   29 /* Private */,
-      18,    1,  263,    2, 0x08,   31 /* Private */,
-      19,    1,  266,    2, 0x08,   33 /* Private */,
-      20,    1,  269,    2, 0x08,   35 /* Private */,
-      21,    1,  272,    2, 0x08,   37 /* Private */,
-      22,    1,  275,    2, 0x08,   39 /* Private */,
-      23,    1,  278,    2, 0x08,   41 /* Private */,
-      24,    1,  281,    2, 0x08,   43 /* Private */,
-      25,    1,  284,    2, 0x08,   45 /* Private */,
-      26,    1,  287,    2, 0x08,   47 /* Private */,
-      27,    1,  290,    2, 0x08,   49 /* Private */,
-      28,    1,  293,    2, 0x08,   51 /* Private */,
-      29,    1,  296,    2, 0x08,   53 /* Private */,
-      30,    1,  299,    2, 0x08,   55 /* Private */,
-      31,    1,  302,    2, 0x08,   57 /* Private */,
-      32,    1,  305,    2, 0x08,   59 /* Private */,
-      33,    1,  308,    2, 0x08,   61 /* Private */,
-      34,    1,  311,    2, 0x08,   63 /* Private */,
-      37,    2,  314,    2, 0x08,   65 /* Private */,
-      40,    1,  319,    2, 0x08,   68 /* Private */,
+       3,    1,  237,    2, 0x08,    2 /* Private */,
+       5,    1,  240,    2, 0x08,    4 /* Private */,
+       6,    1,  243,    2, 0x08,    6 /* Private */,
+       7,    1,  246,    2, 0x08,    8 /* Private */,
+       8,    1,  249,    2, 0x08,   10 /* Private */,
+       9,    1,  252,    2, 0x08,   12 /* Private */,
+      10,    1,  255,    2, 0x08,   14 /* Private */,
+      11,    1,  258,    2, 0x08,   16 /* Private */,
+      12,    1,  261,    2, 0x08,   18 /* Private */,
+      13,    1,  264,    2, 0x08,   20 /* Private */,
+      14,    1,  267,    2, 0x08,   22 /* Private */,
+      15,    1,  270,    2, 0x08,   24 /* Private */,
+      16,    1,  273,    2, 0x08,   26 /* Private */,
+      17,    1,  276,    2, 0x08,   28 /* Private */,
+      18,    1,  279,    2, 0x08,   30 /* Private */,
+      19,    1,  282,    2, 0x08,   32 /* Private */,
+      20,    1,  285,    2, 0x08,   34 /* Private */,
+      21,    1,  288,    2, 0x08,   36 /* Private */,
+      22,    1,  291,    2, 0x08,   38 /* Private */,
+      23,    1,  294,    2, 0x08,   40 /* Private */,
+      24,    1,  297,    2, 0x08,   42 /* Private */,
+      25,    1,  300,    2, 0x08,   44 /* Private */,
+      26,    1,  303,    2, 0x08,   46 /* Private */,
+      27,    1,  306,    2, 0x08,   48 /* Private */,
+      28,    1,  309,    2, 0x08,   50 /* Private */,
+      29,    1,  312,    2, 0x08,   52 /* Private */,
+      30,    1,  315,    2, 0x08,   54 /* Private */,
+      31,    1,  318,    2, 0x08,   56 /* Private */,
+      32,    1,  321,    2, 0x08,   58 /* Private */,
+      33,    1,  324,    2, 0x08,   60 /* Private */,
+      34,    1,  327,    2, 0x08,   62 /* Private */,
+      35,    1,  330,    2, 0x08,   64 /* Private */,
+      38,    2,  333,    2, 0x08,   66 /* Private */,
+      41,    1,  338,    2, 0x08,   69 /* Private */,
+      43,    0,  341,    2, 0x08,   71 /* Private */,
+      44,    1,  342,    2, 0x08,   72 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, 0x80000000 | 35,   36,
-    QMetaType::Void, 0x80000000 | 35, 0x80000000 | 35,   38,   39,
-    QMetaType::Void, QMetaType::QString,   41,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, 0x80000000 | 36,   37,
+    QMetaType::Void, 0x80000000 | 36, 0x80000000 | 36,   39,   40,
+    QMetaType::Void, QMetaType::QString,   42,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 45,   46,
 
        0        // eod
 };
@@ -318,6 +348,8 @@ Q_CONSTINIT const QMetaObject bookingDetails::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSbookingDetailsENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<bookingDetails, std::true_type>,
+        // method 'runChecks'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_hotelID_textChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
@@ -420,7 +452,12 @@ Q_CONSTINIT const QMetaObject bookingDetails::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QListWidgetItem *, std::false_type>,
         // method 'on_zugCS_currentTextChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'on_buttonBox_accepted'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_buttonBox_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QAbstractButton *, std::false_type>
     >,
     nullptr
 } };
@@ -431,39 +468,64 @@ void bookingDetails::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<bookingDetails *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_hotelID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->on_flugID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->on_flugAirline_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 3: _t->on_flugFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 4: _t->on_flugToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 5: _t->on_flugFromDest_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 6: _t->on_flugToDest_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 7: _t->on_flugClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 8: _t->on_flugPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 9: _t->on_carID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 10: _t->on_carClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 11: _t->on_carCompany_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 12: _t->on_carFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 13: _t->on_carToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 14: _t->on_carPickUp_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 15: _t->on_carReturn_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 16: _t->on_carPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 17: _t->on_hotelHotel_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 18: _t->on_hotelClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 19: _t->on_hotelTown_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 20: _t->on_hotelFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 21: _t->on_hotelToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 22: _t->on_hotelPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 23: _t->on_zugClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 24: _t->on_zugFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 25: _t->on_zugPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 26: _t->on_zugToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 27: _t->on_zugFrom_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 28: _t->on_zugTo_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 29: _t->on_zugDeparture_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 30: _t->on_zugArrival_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 31: _t->on_zugCS_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        case 0: _t->runChecks(); break;
+        case 1: _t->on_hotelID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->on_flugID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->on_flugAirline_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->on_flugFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 5: _t->on_flugToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 6: _t->on_flugFromDest_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 7: _t->on_flugToDest_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 8: _t->on_flugClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: _t->on_flugPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 10: _t->on_carID_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 11: _t->on_carClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 12: _t->on_carCompany_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 13: _t->on_carFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 14: _t->on_carToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 15: _t->on_carPickUp_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 16: _t->on_carReturn_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 17: _t->on_carPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 18: _t->on_hotelHotel_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 19: _t->on_hotelClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 20: _t->on_hotelTown_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 21: _t->on_hotelFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 22: _t->on_hotelToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 23: _t->on_hotelPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 24: _t->on_zugClass_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 25: _t->on_zugFromDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 26: _t->on_zugPrice_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 27: _t->on_zugToDate_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 28: _t->on_zugFrom_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 29: _t->on_zugTo_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 30: _t->on_zugDeparture_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 31: _t->on_zugArrival_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 32: _t->on_zugCS_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        //case 33: _t->on_zugCS_currentItemChanged((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[2]))); break;
+        //case 34: _t->on_zugCS_currentTextChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 35: _t->on_buttonBox_accepted(); break;
+        case 36: _t->on_buttonBox_clicked((*reinterpret_cast< std::add_pointer_t<QAbstractButton*>>(_a[1]))); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 36:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QAbstractButton* >(); break;
+            }
+            break;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (bookingDetails::*)();
+            if (_t _q_method = &bookingDetails::runChecks; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
         }
     }
 }
@@ -487,14 +549,20 @@ int bookingDetails::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 34)
+        if (_id < 37)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 34;
+        _id -= 37;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 34)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 34;
+        if (_id < 37)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 37;
     }
     return _id;
+}
+
+// SIGNAL 0
+void bookingDetails::runChecks()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP

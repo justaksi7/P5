@@ -39,51 +39,71 @@ namespace {
 struct qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS = QtMocHelpers::stringData(
     "TravelAgencyUI",
-    "on_actionEinlesen_triggered",
+    "onRun_Checks",
     "",
+    "on_actionEinlesen_triggered",
     "on_actionSuchen_triggered",
     "on_tableWidget_cellDoubleClicked",
     "row",
     "column",
     "on_tableWidget_2_cellDoubleClicked",
-    "on_actionSpeichern_triggered"
+    "on_actionSpeichern_triggered",
+    "on_actionSettings_triggered",
+    "set_Checks",
+    "std::vector<bool>",
+    "checks"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS_t {
-    uint offsetsAndSizes[18];
+    uint offsetsAndSizes[28];
     char stringdata0[15];
-    char stringdata1[28];
+    char stringdata1[13];
     char stringdata2[1];
-    char stringdata3[26];
-    char stringdata4[33];
-    char stringdata5[4];
-    char stringdata6[7];
-    char stringdata7[35];
-    char stringdata8[29];
+    char stringdata3[28];
+    char stringdata4[26];
+    char stringdata5[33];
+    char stringdata6[4];
+    char stringdata7[7];
+    char stringdata8[35];
+    char stringdata9[29];
+    char stringdata10[28];
+    char stringdata11[11];
+    char stringdata12[18];
+    char stringdata13[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS_t qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS = {
     {
         QT_MOC_LITERAL(0, 14),  // "TravelAgencyUI"
-        QT_MOC_LITERAL(15, 27),  // "on_actionEinlesen_triggered"
-        QT_MOC_LITERAL(43, 0),  // ""
-        QT_MOC_LITERAL(44, 25),  // "on_actionSuchen_triggered"
-        QT_MOC_LITERAL(70, 32),  // "on_tableWidget_cellDoubleClicked"
-        QT_MOC_LITERAL(103, 3),  // "row"
-        QT_MOC_LITERAL(107, 6),  // "column"
-        QT_MOC_LITERAL(114, 34),  // "on_tableWidget_2_cellDoubleCl..."
-        QT_MOC_LITERAL(149, 28)   // "on_actionSpeichern_triggered"
+        QT_MOC_LITERAL(15, 12),  // "onRun_Checks"
+        QT_MOC_LITERAL(28, 0),  // ""
+        QT_MOC_LITERAL(29, 27),  // "on_actionEinlesen_triggered"
+        QT_MOC_LITERAL(57, 25),  // "on_actionSuchen_triggered"
+        QT_MOC_LITERAL(83, 32),  // "on_tableWidget_cellDoubleClicked"
+        QT_MOC_LITERAL(116, 3),  // "row"
+        QT_MOC_LITERAL(120, 6),  // "column"
+        QT_MOC_LITERAL(127, 34),  // "on_tableWidget_2_cellDoubleCl..."
+        QT_MOC_LITERAL(162, 28),  // "on_actionSpeichern_triggered"
+        QT_MOC_LITERAL(191, 27),  // "on_actionSettings_triggered"
+        QT_MOC_LITERAL(219, 10),  // "set_Checks"
+        QT_MOC_LITERAL(230, 17),  // "std::vector<bool>"
+        QT_MOC_LITERAL(248, 6)   // "checks"
     },
     "TravelAgencyUI",
-    "on_actionEinlesen_triggered",
+    "onRun_Checks",
     "",
+    "on_actionEinlesen_triggered",
     "on_actionSuchen_triggered",
     "on_tableWidget_cellDoubleClicked",
     "row",
     "column",
     "on_tableWidget_2_cellDoubleClicked",
-    "on_actionSpeichern_triggered"
+    "on_actionSpeichern_triggered",
+    "on_actionSettings_triggered",
+    "set_Checks",
+    "std::vector<bool>",
+    "checks"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -95,7 +115,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTravelAgencyUIENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -103,18 +123,24 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTravelAgencyUIENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x08,    1 /* Private */,
-       3,    0,   45,    2, 0x08,    2 /* Private */,
-       4,    2,   46,    2, 0x08,    3 /* Private */,
-       7,    2,   51,    2, 0x08,    6 /* Private */,
-       8,    0,   56,    2, 0x08,    9 /* Private */,
+       1,    0,   62,    2, 0x0a,    1 /* Public */,
+       3,    0,   63,    2, 0x08,    2 /* Private */,
+       4,    0,   64,    2, 0x08,    3 /* Private */,
+       5,    2,   65,    2, 0x08,    4 /* Private */,
+       8,    2,   70,    2, 0x08,    7 /* Private */,
+       9,    0,   75,    2, 0x08,   10 /* Private */,
+      10,    0,   76,    2, 0x08,   11 /* Private */,
+      11,    1,   77,    2, 0x08,   12 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    5,    6,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    5,    6,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 12,   13,
 
        0        // eod
 };
@@ -128,6 +154,8 @@ Q_CONSTINIT const QMetaObject TravelAgencyUI::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSTravelAgencyUIENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<TravelAgencyUI, std::true_type>,
+        // method 'onRun_Checks'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionEinlesen_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionSuchen_triggered'
@@ -141,7 +169,12 @@ Q_CONSTINIT const QMetaObject TravelAgencyUI::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'on_actionSpeichern_triggered'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionSettings_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'set_Checks'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::vector<bool>, std::false_type>
     >,
     nullptr
 } };
@@ -152,11 +185,14 @@ void TravelAgencyUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<TravelAgencyUI *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_actionEinlesen_triggered(); break;
-        case 1: _t->on_actionSuchen_triggered(); break;
-        case 2: _t->on_tableWidget_cellDoubleClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 3: _t->on_tableWidget_2_cellDoubleClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 4: _t->on_actionSpeichern_triggered(); break;
+        case 0: _t->onRun_Checks(); break;
+        case 1: _t->on_actionEinlesen_triggered(); break;
+        case 2: _t->on_actionSuchen_triggered(); break;
+        case 3: _t->on_tableWidget_cellDoubleClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 4: _t->on_tableWidget_2_cellDoubleClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 5: _t->on_actionSpeichern_triggered(); break;
+        case 6: _t->on_actionSettings_triggered(); break;
+        case 7: _t->set_Checks((*reinterpret_cast< std::add_pointer_t<std::vector<bool>>>(_a[1]))); break;
         default: ;
         }
     }
@@ -181,13 +217,13 @@ int TravelAgencyUI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 8;
     }
     return _id;
 }

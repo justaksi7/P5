@@ -33,6 +33,7 @@ public:
     QAction *actionEinlesen;
     QAction *actionSuchen;
     QAction *actionSpeichern;
+    QAction *actionSettings;
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout_5;
@@ -78,6 +79,12 @@ public:
         icon2.addFile(QString::fromUtf8(":/speichern.png"), QSize(), QIcon::Normal, QIcon::On);
         actionSpeichern->setIcon(icon2);
         actionSpeichern->setMenuRole(QAction::TextHeuristicRole);
+        actionSettings = new QAction(TravelAgencyUI);
+        actionSettings->setObjectName("actionSettings");
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/settings.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/settings.png"), QSize(), QIcon::Normal, QIcon::On);
+        actionSettings->setIcon(icon3);
         centralwidget = new QWidget(TravelAgencyUI);
         centralwidget->setObjectName("centralwidget");
         gridLayout = new QGridLayout(centralwidget);
@@ -203,6 +210,7 @@ public:
         toolBar->addSeparator();
         toolBar->addAction(actionSuchen);
         toolBar->addAction(actionSpeichern);
+        toolBar->addAction(actionSettings);
 
         retranslateUi(TravelAgencyUI);
 
@@ -215,6 +223,7 @@ public:
         actionEinlesen->setText(QCoreApplication::translate("TravelAgencyUI", "Einlesen", nullptr));
         actionSuchen->setText(QCoreApplication::translate("TravelAgencyUI", "Suchen", nullptr));
         actionSpeichern->setText(QCoreApplication::translate("TravelAgencyUI", "Speichern", nullptr));
+        actionSettings->setText(QCoreApplication::translate("TravelAgencyUI", "actionSettings", nullptr));
         label_5->setText(QCoreApplication::translate("TravelAgencyUI", "Reise ID:", nullptr));
         label->setText(QCoreApplication::translate("TravelAgencyUI", "Kunde:", nullptr));
         label_2->setText(QCoreApplication::translate("TravelAgencyUI", "ID:", nullptr));

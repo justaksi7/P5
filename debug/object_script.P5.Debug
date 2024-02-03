@@ -9,13 +9,17 @@ debug/Travel.o
 debug/TravelAgency.o
 debug/bookingdetails.o
 debug/check.o
+debug/consistencychecksui.o
 debug/dialog.o
+debug/errorsui.o
 debug/main.o
 debug/mainwindow.o
 debug/sortfunktor.o
 debug/travelagencyui.o
 debug/qrc_icons.o
 debug/moc_bookingdetails.o
+debug/moc_consistencychecksui.o
 debug/moc_dialog.o
+debug/moc_errorsui.o
 debug/moc_mainwindow.o
 debug/moc_travelagencyui.o

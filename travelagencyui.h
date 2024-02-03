@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include "TravelAgency.h"
 #include "check.h"
+#include "consistencychecksui.h"
+#include "errorsui.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class TravelAgencyUI; }
 QT_END_NAMESPACE
@@ -13,9 +16,11 @@ class TravelAgencyUI : public QMainWindow
     Q_OBJECT
 
 public:
-    TravelAgencyUI(TravelAgency *inTravelAgency=nullptr,QWidget *parent = nullptr);
+    TravelAgencyUI(shared_ptr<TravelAgency>inTravelAgency=nullptr,QWidget *parent = nullptr);
     ~TravelAgencyUI();
     Check check;
+    public slots:
+    void onRun_Checks();
 private slots:
     void on_actionEinlesen_triggered();
 
@@ -27,8 +32,14 @@ private slots:
 
     void on_actionSpeichern_triggered();
 
+    void on_actionSettings_triggered();
+
+    void set_Checks(std::vector<bool>checks);
+
+
+
 private:
     Ui::TravelAgencyUI *ui;
-    TravelAgency* inTravelAgency;
+    shared_ptr< TravelAgency> inTravelAgency;
 };
 #endif // TRAVELAGENCYUI_H

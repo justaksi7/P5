@@ -71,6 +71,16 @@ bool TravelAgency::travelExists(long inid)
     }
     return found;
 }
+TravelAgency::TravelAgency()
+{
+    //Setting all consistency checks to true per default
+
+    for(int i=0;i<4;i++)
+    {
+        consistencyChecks.push_back(true);
+    }
+}
+
 void TravelAgency::readFile(string inJSONname)
 {
     if(inJSONname!=""){
@@ -439,6 +449,22 @@ void TravelAgency::setBookings(long travelID, QTableWidget *bookingsTable)
             bookingsTable->setItem(row,2,end);
             bookingsTable->setItem(row,3,price);
         }
+    }
+}
+
+void TravelAgency::setConsistencyChecks(vector<bool>checksarray)
+{
+    for(int i=0;i<4;i++)
+    {
+        consistencyChecks[i]=checksarray[i];
+    }
+}
+
+void TravelAgency::setErrorsUI(QListWidget *listWidget)
+{
+    for(const auto& error:errorVector)
+    {
+        listWidget->addItem(error);
     }
 }
 
