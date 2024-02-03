@@ -15,6 +15,7 @@ private:
     vector<shared_ptr<Customer>>allCustomers;
     vector<shared_ptr<Travel>>allTravels;
     map<string,shared_ptr<Airport>>airports;
+    vector<QString>errorVector;
 public:
     TravelAgency(){}
     friend class TravelAgencyUI;

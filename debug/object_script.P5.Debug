@@ -1,6 +1,5 @@
 debug/Airport.o
 debug/Booking.o
-debug/algorithmen.o
 debug/Customer.o
 debug/FlightBooking.o
 debug/HotelBooking.o

@@ -24,6 +24,7 @@ public:
     friend class TravelAgency;
     friend class SortFunktor;
     friend class Travel;
+    friend class Check;
     string type;
     Booking(){}
     virtual std::string showDetails()=0;

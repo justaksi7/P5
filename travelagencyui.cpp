@@ -10,9 +10,11 @@
 
 TravelAgencyUI::TravelAgencyUI(TravelAgency* inTravelAgency,QWidget *parent)
     : QMainWindow(parent)
+    ,ui(new Ui::TravelAgencyUI)
+    ,check(make_shared<TravelAgency>(*inTravelAgency))
     ,inTravelAgency(inTravelAgency)
-    , ui(new Ui::TravelAgencyUI)
 {
+
     ui->setupUi(this);
     ui->tableWidget->setColumnWidth(0,100);
     ui->tableWidget->setColumnWidth(1,100);
@@ -21,6 +23,7 @@ TravelAgencyUI::TravelAgencyUI(TravelAgency* inTravelAgency,QWidget *parent)
 
 TravelAgencyUI::~TravelAgencyUI()
 {
+    delete inTravelAgency;
     delete ui;
 }
 

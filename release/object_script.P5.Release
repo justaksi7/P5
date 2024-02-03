@@ -1,6 +1,5 @@
 release/Airport.o
 release/Booking.o
-release/algorithmen.o
 release/Customer.o
 release/FlightBooking.o
 release/HotelBooking.o

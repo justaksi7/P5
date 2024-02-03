@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "TravelAgency.h"
-
+#include "check.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class TravelAgencyUI; }
 QT_END_NAMESPACE
@@ -15,6 +15,7 @@ class TravelAgencyUI : public QMainWindow
 public:
     TravelAgencyUI(TravelAgency *inTravelAgency=nullptr,QWidget *parent = nullptr);
     ~TravelAgencyUI();
+    Check check;
 private slots:
     void on_actionEinlesen_triggered();
 

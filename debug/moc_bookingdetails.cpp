@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'bookingdetails.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -21,7 +21,7 @@ QT_BEGIN_MOC_NAMESPACE
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'bookingdetails.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.5.2. It"
+#error "This file was generated using the moc from 6.5.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -463,8 +463,6 @@ void bookingDetails::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 29: _t->on_zugDeparture_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 30: _t->on_zugArrival_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 31: _t->on_zugCS_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
-        //case 32: _t->on_zugCS_currentItemChanged((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[2]))); break;
-        //case 33: _t->on_zugCS_currentTextChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }

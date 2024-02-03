@@ -348,8 +348,8 @@ void TravelAgency::setTravels(long customerID, QTableWidget *travelsTable)
     {
         travelsTable->insertRow(row);
         QTableWidgetItem *id=new QTableWidgetItem(QString::number(travel->getid()));
-        QTableWidgetItem *startdate=new QTableWidgetItem(QString::fromStdString(travel->getStartDate()));
-        QTableWidgetItem *enddate=new QTableWidgetItem(QString::fromStdString(travel->getEndDate()));
+        QTableWidgetItem *startdate=new QTableWidgetItem(QDate::fromString(QString::fromStdString(travel->getStartDate()),"yyyyMMdd").toString());
+        QTableWidgetItem *enddate=new QTableWidgetItem(QDate::fromString(QString::fromStdString(travel->getEndDate()),"yyyyMMdd").toString());
         travelsTable->setItem(row,0,id);
         travelsTable->setItem(row,1,startdate);
         travelsTable->setItem(row,2,enddate);
@@ -378,8 +378,8 @@ void TravelAgency::setBookings(long travelID, QTableWidget *bookingsTable)
             QTableWidgetItem *start;
             QTableWidgetItem *end;
             QTableWidgetItem *price;
-            start=new QTableWidgetItem(QString::fromStdString(booking->fromDate));
-            end=new QTableWidgetItem(QString::fromStdString(booking->toDate));
+            start=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->fromDate),"yyyyMMdd").toString());
+            end=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->toDate),"yyyyMMdd").toString());
             icon=new QTableWidgetItem;
             price=new QTableWidgetItem(QString::number(booking->price));
             icon->setIcon(iconitem);
@@ -395,8 +395,8 @@ void TravelAgency::setBookings(long travelID, QTableWidget *bookingsTable)
             QTableWidgetItem *start;
             QTableWidgetItem *end;
             QTableWidgetItem *price;
-            start=new QTableWidgetItem(QString::fromStdString(booking->fromDate));
-            end=new QTableWidgetItem(QString::fromStdString(booking->toDate));
+            start=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->fromDate),"yyyyMMdd").toString());
+            end=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->toDate),"yyyyMMdd").toString());
             icon=new QTableWidgetItem;
             price=new QTableWidgetItem(QString::number(booking->price));
             icon->setIcon(iconitem);
@@ -412,8 +412,8 @@ void TravelAgency::setBookings(long travelID, QTableWidget *bookingsTable)
             QTableWidgetItem *start;
             QTableWidgetItem *end;
             QTableWidgetItem *price;
-            start=new QTableWidgetItem(QString::fromStdString(booking->fromDate));
-            end=new QTableWidgetItem(QString::fromStdString(booking->toDate));
+            start=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->fromDate),"yyyyMMdd").toString());
+            end=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->toDate),"yyyyMMdd").toString());
             icon=new QTableWidgetItem;
             price=new QTableWidgetItem(QString::number(booking->price));
             icon->setIcon(iconitem);
@@ -429,8 +429,8 @@ void TravelAgency::setBookings(long travelID, QTableWidget *bookingsTable)
             QTableWidgetItem *start;
             QTableWidgetItem *end;
             QTableWidgetItem *price;
-            start=new QTableWidgetItem(QString::fromStdString(booking->fromDate));
-            end=new QTableWidgetItem(QString::fromStdString(booking->toDate));
+            start=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->fromDate),"yyyyMMdd").toString());
+            end=new QTableWidgetItem(QDate::fromString(QString::fromStdString(booking->toDate),"yyyyMMdd").toString());
             icon=new QTableWidgetItem;
             price=new QTableWidgetItem(QString::number(booking->price));
             icon->setIcon(iconitem);

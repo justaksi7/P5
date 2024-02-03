@@ -11,7 +11,6 @@ CONFIG += c++20
 SOURCES += \
     Airport.cpp \
     Booking.cpp \
-    C:/Users/justa/Downloads/Graph/algorithmen.cpp \
     Customer.cpp \
     FlightBooking.cpp \
     HotelBooking.cpp \
@@ -31,7 +30,6 @@ SOURCES += \
 HEADERS += \
     Airport.h \
     Booking.h \
-    C:/Users/justa/Downloads/Graph/graph.h \
     Customer.h \
     FlightBooking.h \
     HotelBooking.h \
