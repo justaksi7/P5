@@ -43,17 +43,27 @@ static constexpr auto qt_meta_stringdata_CLASSconsistencyChecksUIENDCLASS = QtMo
     "",
     "std::vector<bool>",
     "checks",
-    "on_buttonBox_accepted"
+    "on_buttonBox_accepted",
+    "on_checkBox_stateChanged",
+    "arg1",
+    "on_checkBox_2_stateChanged",
+    "on_checkBox_3_stateChanged",
+    "on_checkBox_4_stateChanged"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSconsistencyChecksUIENDCLASS_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[22];
     char stringdata0[20];
     char stringdata1[13];
     char stringdata2[1];
     char stringdata3[18];
     char stringdata4[7];
     char stringdata5[22];
+    char stringdata6[25];
+    char stringdata7[5];
+    char stringdata8[27];
+    char stringdata9[27];
+    char stringdata10[27];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSconsistencyChecksUIENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -64,14 +74,24 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSconsistencyChecksUIENDCLASS_t q
         QT_MOC_LITERAL(33, 0),  // ""
         QT_MOC_LITERAL(34, 17),  // "std::vector<bool>"
         QT_MOC_LITERAL(52, 6),  // "checks"
-        QT_MOC_LITERAL(59, 21)   // "on_buttonBox_accepted"
+        QT_MOC_LITERAL(59, 21),  // "on_buttonBox_accepted"
+        QT_MOC_LITERAL(81, 24),  // "on_checkBox_stateChanged"
+        QT_MOC_LITERAL(106, 4),  // "arg1"
+        QT_MOC_LITERAL(111, 26),  // "on_checkBox_2_stateChanged"
+        QT_MOC_LITERAL(138, 26),  // "on_checkBox_3_stateChanged"
+        QT_MOC_LITERAL(165, 26)   // "on_checkBox_4_stateChanged"
     },
     "consistencyChecksUI",
     "returnChecks",
     "",
     "std::vector<bool>",
     "checks",
-    "on_buttonBox_accepted"
+    "on_buttonBox_accepted",
+    "on_checkBox_stateChanged",
+    "arg1",
+    "on_checkBox_2_stateChanged",
+    "on_checkBox_3_stateChanged",
+    "on_checkBox_4_stateChanged"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -83,7 +103,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSconsistencyChecksUIENDCLASS[] = 
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,16 +111,24 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSconsistencyChecksUIENDCLASS[] = 
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x06,    1 /* Public */,
+       1,    1,   50,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   29,    2, 0x08,    3 /* Private */,
+       5,    0,   53,    2, 0x08,    3 /* Private */,
+       6,    1,   54,    2, 0x08,    4 /* Private */,
+       8,    1,   57,    2, 0x08,    6 /* Private */,
+       9,    1,   60,    2, 0x08,    8 /* Private */,
+      10,    1,   63,    2, 0x08,   10 /* Private */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void, QMetaType::Int,    7,
 
        0        // eod
 };
@@ -118,7 +146,19 @@ Q_CONSTINIT const QMetaObject consistencyChecksUI::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<std::vector<bool>, std::false_type>,
         // method 'on_buttonBox_accepted'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_checkBox_stateChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'on_checkBox_2_stateChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'on_checkBox_3_stateChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'on_checkBox_4_stateChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -131,6 +171,10 @@ void consistencyChecksUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         switch (_id) {
         case 0: _t->returnChecks((*reinterpret_cast< std::add_pointer_t<std::vector<bool>>>(_a[1]))); break;
         case 1: _t->on_buttonBox_accepted(); break;
+        case 2: _t->on_checkBox_stateChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->on_checkBox_2_stateChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->on_checkBox_3_stateChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->on_checkBox_4_stateChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -164,13 +208,13 @@ int consistencyChecksUI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 6;
     }
     return _id;
 }

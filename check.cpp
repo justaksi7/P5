@@ -4,6 +4,11 @@
 #include <QString>
 void Check::operator()()
 {
+    while(travelAgency->errorVector.empty()==false)
+    {
+        travelAgency->errorVector.pop_back();
+    }
+
     if(travelAgency->consistencyChecks[0]==true)
     {
         checkTravelsDisjunct();
@@ -168,7 +173,6 @@ void Check::checkForChanges()
 Check::Check(shared_ptr<TravelAgency> inTravelAgency)
 {
     this->travelAgency=inTravelAgency;
-    travelAgency->errorVector.push_back("Test");
 }
 
 Check::~Check()

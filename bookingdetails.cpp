@@ -10,7 +10,6 @@ bookingDetails::bookingDetails(shared_ptr<TravelAgency> inTravelAgency,shared_pt
 {
     ui->setupUi(this);
     setDetails();
-    emit this->runChecks();
 }
 
 bookingDetails::~bookingDetails()
@@ -194,7 +193,6 @@ void bookingDetails::on_flugFromDest_textChanged(const QString &arg1)
         ui->fromName->setText("Ungültiger IATA Code");
             ui->fromName->setStyleSheet("color:red;");
     }
-    emit runChecks();
 }
 
 
@@ -403,12 +401,12 @@ void bookingDetails::on_zugCS_itemDoubleClicked(QListWidgetItem *item)
 
 void bookingDetails::on_buttonBox_accepted()
 {
-    emit runChecks();
+
 }
 
 
 void bookingDetails::on_buttonBox_clicked(QAbstractButton *button)
 {
-    emit runChecks();
+    emit this->run_checks();
 }
 

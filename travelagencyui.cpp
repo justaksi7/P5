@@ -36,9 +36,8 @@ void TravelAgencyUI::on_actionEinlesen_triggered()
     msg.setWindowTitle("Read File");
     msg.setText(QString::fromStdString(inTravelAgency->einlesenMeldung));
     msg.exec();
-    check.checkForChanges();
-    errorsUI e(inTravelAgency->errorVector,this);
-    e.exec();
+    connect(this,&TravelAgencyUI::run_checks,this,&TravelAgencyUI::on_run_checks);
+    emit this->run_checks();
 }
 
 
@@ -86,9 +85,9 @@ void TravelAgencyUI::on_tableWidget_cellDoubleClicked(int row, int column)
 
 void TravelAgencyUI::on_tableWidget_2_cellDoubleClicked(int row, int column)
 {
-    bookingDetails b(inTravelAgency,inTravelAgency->findTravel(ui->reiseID->text().toLong())->travelBookings[row],this);
-    b.exec();
-    connect(&b,&bookingDetails::runChecks,this,&TravelAgencyUI::onRun_Checks);
+    bookingDetails *b=new bookingDetails(inTravelAgency,inTravelAgency->findTravel(ui->reiseID->text().toLong())->travelBookings[row],this);
+    b->show();
+    connect(b,&bookingDetails::run_checks,this,&TravelAgencyUI::on_run_checks);
 }
 
 
@@ -100,19 +99,26 @@ void TravelAgencyUI::on_actionSpeichern_triggered()
 
 void TravelAgencyUI::on_actionSettings_triggered()
 {
-    consistencyChecksUI* c=new consistencyChecksUI;
-    c->exec();
-    connect(c,&consistencyChecksUI::returnChecks,this,&TravelAgencyUI::set_Checks);
+    consistencyChecksUI c(inTravelAgency,this);
+    c.exec();
 }
 
 void TravelAgencyUI::set_Checks(std::vector<bool> checks)
 {
-    inTravelAgency->setConsistencyChecks(checks);
+
 }
 
-void TravelAgencyUI::onRun_Checks()
+void TravelAgencyUI::on_run_checks()
 {
-    check.checkForChanges();
+    check();
+    errorsUI e(inTravelAgency->errorVector,this);
+    e.exec();
+}
+
+
+void TravelAgencyUI::on_actionErrors_triggered()
+{
+    check();
     errorsUI e(inTravelAgency->errorVector,this);
     e.exec();
 }

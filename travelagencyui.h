@@ -19,9 +19,13 @@ public:
     TravelAgencyUI(shared_ptr<TravelAgency>inTravelAgency=nullptr,QWidget *parent = nullptr);
     ~TravelAgencyUI();
     Check check;
-    public slots:
-    void onRun_Checks();
+
+signals:
+    void run_checks();
+
 private slots:
+    void on_run_checks();
+
     void on_actionEinlesen_triggered();
 
     void on_actionSuchen_triggered();
@@ -37,6 +41,8 @@ private slots:
     void set_Checks(std::vector<bool>checks);
 
 
+
+    void on_actionErrors_triggered();
 
 private:
     Ui::TravelAgencyUI *ui;

@@ -19,7 +19,7 @@ public:
     map <string,shared_ptr<Airport>>airports;
     ~bookingDetails();
 signals:
-    void runChecks();
+    void run_checks();
 
 private slots:
     void on_hotelID_textChanged(const QString &arg1);

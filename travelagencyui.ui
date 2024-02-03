@@ -164,6 +164,7 @@
    <addaction name="actionSuchen"/>
    <addaction name="actionSpeichern"/>
    <addaction name="actionSettings"/>
+   <addaction name="actionErrors"/>
   </widget>
   <action name="actionEinlesen">
    <property name="icon">
@@ -204,6 +205,11 @@
    </property>
    <property name="text">
     <string>actionSettings</string>
+   </property>
+  </action>
+  <action name="actionErrors">
+   <property name="text">
+    <string>Errors</string>
    </property>
   </action>
  </widget>

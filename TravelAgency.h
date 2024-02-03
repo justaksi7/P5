@@ -17,12 +17,13 @@ private:
     vector<shared_ptr<Travel>>allTravels;
     map<string,shared_ptr<Airport>>airports;
     vector<QString>errorVector;
-    vector<bool> consistencyChecks;
+
 public:
     TravelAgency();
     friend class TravelAgencyUI;
     friend class bookingDetails;
     friend class Check;
+    vector<bool> consistencyChecks;
     void readFile(string inJSONname);
     void writeFile(string inJSONname);
     shared_ptr<Booking> findBooking(string id);
